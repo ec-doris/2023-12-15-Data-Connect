@@ -1,10 +1,8 @@
-## Presentation Semantics 2021
+# Presentation iTalk 2023
 
-Presentation given at Semantics 2021 by Dennis Diefenbach (The QA Company), Max De Wilde (DG CNECT - European Commission), Anne Thollard (DG REGIO, European Commission) about the EU Knowledge Graph
+iTalk lunchtime presentation given by Max De Wilde about the EU Knowledge Graph
 
-### To deploy
+## To deploy
 
-To deploy:
 - npm install
 - npm start
-
