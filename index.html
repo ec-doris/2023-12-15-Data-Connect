@@ -61,12 +61,12 @@
                 <section ch="1" >
 					<div>Docker image</div>
                     <img src="assets/wikibase_docker.png" style="width: 80%;">
-				</section>-->
+				</section>
 				<section ch="1" >
 					<div>Comparison with other solutions</div>
                     <img src="assets/classical_vs_wikibase.png" style="width: 70%;">
 					<div style="font-size: 15pt">Source: Dennis Diefenbach, Max De Wilde and Samantha Alipio (ISWC 2021)<br><a href="https://hal.archives-ouvertes.fr/hal-03353225/document">Wikibase as an Infrastructure for Knowledge Graphs: the EU Knowledge Graph</a></div>
-				</section>
+				</section>-->
 
 				<section ch="2" id="eukg">
 					<h2>The EU Knowledge Graph<div style="vertical-align: top; font-size: smaller; display: inline;"></div></h2>
@@ -75,7 +75,7 @@
 					<div>A repository to store structured information<br>about the European Union</div>
 				</section>
 				<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/The_EU_Knowledge_Graph" data-background-interactive>
-					<div style="margin-bottom: 90%"><a href="https://linkedopendata.eu/">https://knowledgegraph.eu/</a> </div>
+					<div style="margin-bottom: 90%"><a href="https://linkedopendata.eu/">https://linkedopendata.eu/</a> </div>
 				</section>
 				<section>
 					<section ch="2">
@@ -134,7 +134,7 @@
 					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q131" data-background-interactive>
 						<div style="margin-bottom: 90%">Heads of States</div>
 					</section>
-					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q8361" data-background-interactive>
+					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q83" data-background-interactive>
 						<div style="margin-bottom: 90%">DGs</div>
 					</section>
 					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q244787" data-background-interactive>
@@ -175,11 +175,11 @@
 						<h3> 3. Keep identifiers</h3>
 						<div> Use external identifiers so that one can use them to link to other resources!</div>
 					</section>
-					<section ch="2">
+					<!--<section ch="2">
 						<h3> 4. Import using Wikibase APIs</h3>
 						<div> We always use Pywikibot</div>
 						<div> But there are alternatives...</div>
-					</section>
+					</section>-->
 					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q242378" data-background-interactive>
 					</section>
 					<section ch="2">
@@ -202,9 +202,14 @@
 					</section>
 					<section ch="2">
 						<h3> For this we use Wikibase Sync</h3>
-						<a href="https://github.com/the-qa-company/WikibaseSync" target="_blank">https://github.com/the-qa-company/WikibaseSync</a>
+						<p><a href="https://github.com/the-qa-company/WikibaseSync" target="_blank">https://github.com/the-qa-company/WikibaseSync</a></p>
+                        <ol>
+							<li>syncing items and properties</li>
+							<li>local changes are not overwritten</li>
+                            <li>refreshed every 5 minutes</li>
+						</ol>
 					</section>
-					<section ch="2">
+					<!--<section ch="2">
 						<h3>What is it?</h3>
 						<div>Similar to WikibaseImport but...</div>
 						<ol>
@@ -212,7 +217,6 @@
 							<li>it can sync items and properties</li>
 							<li>local changes are not overwritten</li>
 						</ol>
-
 					</section>
 					<section ch="2">
 						<h3 style="text-transform: none;">WikibaseUpdater</h3>
@@ -238,7 +242,7 @@
 						<div>Available at <a href="https://query.linkedopendata.eu">https://query.linkedopendata.eu</a></div>
 					</section>
 					<section ch="2" data-background-iframe="https://query.linkedopendata.eu/#%23defaultView%3AMap%20%0ASELECT%20DISTINCT%20%3Fs1%20%3Fcoordinates%20WHERE%20%7B%0A%20%20%20%20%20%3Fs1%20%20%3Fp1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ63%3E%20.%20%0A%09%20%3Fs1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP35%3E%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ8636%3E%20.%20%0A%20%20%20%20%20%3Fs1%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP127%3E%20%3Fcoordinates%20.%0A%20%7D%20%20LIMIT%201000" data-background-interactive>
-					</section>
+					</section>-->
 					<!--<section ch="2">
 						<h3> 3. Question Answering</h3>
 						<div>Allows to explore the data using natural language</div>
@@ -302,8 +306,8 @@
 					<h2>Building a website on top</h2>
 					<div>Available at <a href="https://kohesio.ec.europa.eu/">https://kohesio.ec.europa.eu/</a> </div>
 				</section>
-				<section ch="3" data-background-iframe="https://kohesio.ec.europa.eu/en/" data-background-interactive>
-				</section>
+				<!--<section ch="3" data-background-iframe="https://kohesio.ec.europa.eu/en/" data-background-interactive>
+				</section>-->
 				<!--<section ch="3">
 					<h2>To summarize</h2>
 					<ol>
@@ -315,11 +319,10 @@
 				<section id="usecases" ch="4">
 					<h2>Other use cases</h2>
 					<ul>
-						<li>with OP: linking more vocabularies like Eurovoc</li>
+						<li>with OP: linking more vocabularies like EuroSciVoc</li>
                         <li>with RTD: closer integration with Horizon projects</li>
                         <li>with Eurostat: Local Administrative Units (LAUs)</li>
                         <li>with OIB: historical archives about organisations</li>
-                        <li>with GROW: platform for single market obstacles</li>
 					</ul>
 				</section>
                 <section id="usecases" ch="4">
